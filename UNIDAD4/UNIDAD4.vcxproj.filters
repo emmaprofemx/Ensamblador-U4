@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <MASM Include="Plantilla.asm" />
+    <MASM Include="P1_IntroVectores.asm" />
+    <MASM Include="P2_IntroVecotres2.asm" />
+    <MASM Include="P3_IntroVectores3.asm" />
+    <MASM Include="P3_IntroVectores3v2.asm" />
+    <MASM Include="P4_MostrandoDatos.asm" />
+    <MASM Include="P_07_RecorridoArreglos.asm" />
+    <MASM Include="P_8_ValorMayor.asm" />
+    <MASM Include="P_9_ValorMenor.asm" />
+    <MASM Include="P_10_CuantosMenoresQueX.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\..\..\..\..\..\Irvine\Lib32\Irvine32_Library\Irvine32.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="macros.inc" />
+  </ItemGroup>
+</Project>
