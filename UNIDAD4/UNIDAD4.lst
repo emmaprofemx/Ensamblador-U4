@@ -1,16 +1,18 @@
-Microsoft (R) Macro Assembler Version 14.29.30133.0	    03/27/23 20:39:41
-Ej_cuadrado.asm						     Page 1 - 1
+Microsoft (R) Macro Assembler Version 14.29.30133.0	    03/28/23 20:47:05
+NombreProgram						     Page 1 - 1
 
 
-				;DESCRIPCIÓN
+				TITLE NombrePrograma
+
+				;DESCRPICIÓN 
 				;Objetivo: Archivo de Ejemplo
 				;
-				;Autor(es):
+				; Autore(s):
 				;         Luna Sanchez Juan Pablo.
 				;         Ruiz Garcia Emmanuel Alejandro.
-				;
-				;Semestre: 8vo Semestre ISC
-				;FIN DESCRIPCIÓN
+
+				; Semestre: 8vo Semestre ISC 
+				;FIN DESCRPICIÓN
 
 				INCLUDE Irvine32.inc  
 			      C ; Include file for Irvine32.lib             (Irvine32.inc)
@@ -30,11 +32,28 @@ Ej_cuadrado.asm						     Page 1 - 1
 			      C .NOLIST
 			      C .LIST
 			      C 
+				INCLUDE macros.inc
+			      C println macro cadena
+			      C local cad
+			      C .data
+			      C 	cad db cadena , 0
+			      C 
+			      C 	.code
+			      C 		push edx 
+			      C 		mov edx , offset cad
+			      C 		call writestring
+			      C 		call crlf
+			      C 		pop edx
+			      C 
+			      C 		ENDM
+			      C 
+			      C 
 
  00000000			.data
 				; Área de Declaración de Variables
 
- 00000000 0000000A		vector_9 dword 10,24,90,12,11,9
+ 00000000 00000000		contenedor dword 0d
+ 00000004 0000000A		vector_9 dword 10,24,90,12,11,9
 	   00000018
 	   0000005A
 	   0000000C
@@ -43,35 +62,63 @@ Ej_cuadrado.asm						     Page 1 - 1
 
  00000000			.code
 
- 00000000			main507 PROC
-				   
- 00000000  BA 00000000		    mov edx, 0 
+ 00000000				main510 PROC
+					
+ 00000000  BE 00000000			mov esi, 0 ; indice / posicion que se accedera en el vector
+ 00000005  8B 9E 00000004 R		mov ebx, vector_9[esi] ; suponemos que el primer valor es el mayor de todos
 
- 00000005  B8 00000018		    mov eax, sizeof vector_9
- 0000000A  B9 00000004		    mov ecx, 4
- 0000000F  F7 F1		    div ecx
- 00000011  8B C8		    mov ecx, eax 
- 00000013  BE 00000000		    mov esi, 0 ; Primera posicion del vector
+ 0000000B  BA 00000000			mov edx,0; limpia el registro para la division
+ 00000010  B8 00000018			mov eax, sizeof vector_9 ; obtener el valor de x , estoy se ocupa (1)
+ 00000015  B9 00000004			mov ecx, 4 ; esto tambien lo debeemos de ocupar (2)
+ 0000001A  F7 F1			div ecx ; (3)
+ 0000001C  8B C8			mov ecx, eax ; cantidad de elementos en el vector (4)
 
- 00000018			ciclo:
-				   
- 00000018  8B 86 00000000 R	    mov eax, vector_9[esi] ; se almacena el valor del primer elemento del vector
- 0000001E  F7 E0		    mul eax ; se multiplica eax por si mismo
- 00000020  E8 00000000 E	    call writedec ; imprimer el resultado de la multiplicacion
- 00000025  E8 00000000 E	    call crlf
-				    
- 0000002A  83 C6 04		    add esi, 4 ; se incrementa para avanzar al siguiente elemento
- 0000002D  E2 E9		    loop ciclo
+ 0000001E  83 C6 04			 add esi , 4
+ 00000021  49				 dec ecx
 
-				    ; salir del programa
-				    exit
- 00000036			main507 ENDP
-				END main507
+ 00000022				ciclo:
 
-Microsoft (R) Macro Assembler Version 14.29.30133.0	    03/27/23 20:39:41
-Ej_cuadrado.asm						     Symbols 2 - 1
+ 00000022  3B 9E 00000004 R		   cmp ebx, vector_9[esi]
+					   ; SI EBX ES MENOR 
+
+ 00000028  7C 06			   jl continuar
+					   ; si ebx es menor que el valor del vector
+ 0000002A  8B 9E 00000004 R		   mov ebx , vector_9[esi]
 
 
+ 00000030				   continuar:
+ 00000030  83 C6 04			   add esi , 4
+ 00000033  E2 ED			   loop ciclo
+
+ 00000035  8B C3				mov eax , ebx
+						println"El menor es: "	
+ 0000001C		     1	.data
+ 0000001C 45 6C 20 6D 65     1		??0000 db "El menor es: " , 0
+	   6E 6F 72 20 65
+	   73 3A 20 00
+ 00000037		     1		.code
+ 00000037  52		     1			push edx 
+ 00000038  BA 0000001C R     1			mov edx , offset ??0000
+ 0000003D  E8 00000000 E     1			call writestring
+ 00000042  E8 00000000 E     1			call crlf
+ 00000047  5A		     1			pop edx
+ 00000048  E8 00000000 E			call writedec
+					
+ 0000004D				main510 ENDP
+					
+					END main510
+					
+Microsoft (R) Macro Assembler Version 14.29.30133.0	    03/28/23 20:47:05
+NombreProgram						     Symbols 2 - 1
+
+
+
+
+Macros:
+
+                N a m e                 Type
+
+println  . . . . . . . . . . . .	Proc
 
 
 Structures and Unions:
@@ -162,8 +209,8 @@ Segments and Groups:
 
 FLAT . . . . . . . . . . . . . .	GROUP
 STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
-_DATA  . . . . . . . . . . . . .	32 Bit	 00000018 Para	  Public  'DATA'	
-_TEXT  . . . . . . . . . . . . .	32 Bit	 00000036 Para	  Public  'CODE'	
+_DATA  . . . . . . . . . . . . .	32 Bit	 0000002A Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000004D Para	  Public  'CODE'	
 
 
 Procedures, parameters, and locals:
@@ -270,8 +317,9 @@ WriteStackFrame  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External
 WriteString  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
 WriteToFile  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
 WriteWindowsMsg  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
-main507  . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000036 Public STDCALL
-  ciclo  . . . . . . . . . . . .	L Near	 00000018 _TEXT	
+main510  . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000004D Public STDCALL
+  ciclo  . . . . . . . . . . . .	L Near	 00000022 _TEXT	
+  continuar  . . . . . . . . . .	L Near	 00000030 _TEXT	
 printf . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 scanf  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 wsprintfA  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
@@ -281,6 +329,7 @@ Symbols:
 
                 N a m e                 Type     Value    Attr
 
+??0000 . . . . . . . . . . . . .	Byte	 0000001C _DATA	
 @CodeSize  . . . . . . . . . . .	Number	 00000000h   
 @DataSize  . . . . . . . . . . .	Number	 00000000h   
 @Interface . . . . . . . . . . .	Number	 00000003h   
@@ -493,6 +542,7 @@ WriteConsole . . . . . . . . . .	Text   	 WriteConsoleA
 black  . . . . . . . . . . . . .	Number	 00000000h   
 blue . . . . . . . . . . . . . .	Number	 00000001h   
 brown  . . . . . . . . . . . . .	Number	 00000006h   
+contenedor . . . . . . . . . . .	DWord	 00000000 _DATA	
 cyan . . . . . . . . . . . . . .	Number	 00000003h   
 exit . . . . . . . . . . . . . .	Text   	 INVOKE ExitProcess,0
 gray . . . . . . . . . . . . . .	Number	 00000008h   
@@ -505,7 +555,7 @@ lightMagenta . . . . . . . . . .	Number	 0000000Dh
 lightRed . . . . . . . . . . . .	Number	 0000000Ch   
 magenta  . . . . . . . . . . . .	Number	 00000005h   
 red  . . . . . . . . . . . . . .	Number	 00000004h   
-vector_9 . . . . . . . . . . . .	DWord	 00000000 _DATA	
+vector_9 . . . . . . . . . . . .	DWord	 00000004 _DATA	
 white  . . . . . . . . . . . . .	Number	 0000000Fh   
 wsprintf . . . . . . . . . . . .	Text   	 wsprintfA
 yellow . . . . . . . . . . . . .	Number	 0000000Eh   
