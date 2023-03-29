@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <MASM Include="Ej_Par.asm" />
+    <MASM Include="Ej_promedio.asm" />
     <MASM Include="P1_IntroVectores.asm" />
     <MASM Include="P2_IntroVecotres2.asm" />
     <MASM Include="P3_IntroVectores3.asm" />
@@ -27,6 +29,7 @@
     <MASM Include="Plantilla.asm">
       <FileType>Document</FileType>
     </MASM>
+    <MASM Include="Ej_cuadrado.asm" />
     <MASM Include="P_07_RecorridoArreglos.asm" />
     <MASM Include="P_10_CuantosMenoresQueX.asm" />
     <MASM Include="P_8_ValorMayor.asm" />
@@ -114,7 +117,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>c:/Irvine</AdditionalLibraryDirectories>
-      <EntryPointSymbol>main511</EntryPointSymbol>
+      <EntryPointSymbol>main507</EntryPointSymbol>
       <ImportLibrary>c:/Irvine</ImportLibrary>
     </Link>
     <MASM>
