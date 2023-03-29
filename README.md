@@ -11,3 +11,6 @@ En esta repositorio se incluiran ejemplos del uso de Arrays en el lenguaje ensam
 * [P10-Cuantos Menores que X](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_10_CuantosMenoresQueX.asm)
 
 ## TAREAS 
+* [EJ1-Potencia de todos los numeros](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_cuadrado.asm)
+* [EJ2-Promedio de todos los numeros del vector](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_promedio.asm)
+* [EJ3-Pares en el vector](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_Par.asm)
