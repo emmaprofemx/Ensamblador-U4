@@ -9,6 +9,10 @@ En esta repositorio se incluiran ejemplos del uso de Arrays en el lenguaje ensam
 * [P8-Valor Mayor de un array](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_8_ValorMayor.asm)
 * [P9-Valor Menor de un array](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_9_ValorMenor.asm)
 * [P10-Cuantos Menores que X](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_10_CuantosMenoresQueX.asm)
+* [P15-Entrada Vector](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_15EntradaVector.asm)
+* [P16-DUP](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_16DUP.asm)
+* [P16-Leer Caracterees](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_17LeerCarecteres.asm)
+* [P18-Leer Caracteres v2](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_18LeecCaracteresV2.asm)
 
 ## TAREAS 
 * [EJ1-Potencia de todos los numeros](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_cuadrado.asm)
