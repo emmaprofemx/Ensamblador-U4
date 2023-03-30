@@ -26,18 +26,18 @@ variable_18 dword 3
 	main518 PROC
 		;Logica del programa
 		
-		mov ecx , 4
+		;mov ecx , 4
 
-		mov esi , 0
+		;mov esi , 0
 
-		ciclo: ; valores con letras mayusculas en ascii ... 65 , 66
-			call readint
-			mov vector_18[esi], al
-			inc esi
-			loop ciclo
+		;ciclo: ; valores con letras mayusculas en ascii ... 65 , 66
+			;call readint
+			;mov vector_18[esi], al
+			;inc esi
+			;loop ciclo
 
-		mov edx , offset vector_18
-		call writestring
+		;mov edx , offset vector_18
+		;call writestring
 
 
 		exit

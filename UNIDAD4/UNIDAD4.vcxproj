@@ -36,6 +36,8 @@
     <MASM Include="P_16DUP.asm" />
     <MASM Include="P_17LeerCarecteres.asm" />
     <MASM Include="P_18LeecCaracteresV2.asm" />
+    <MASM Include="P_19ModificarCadena.asm" />
+    <MASM Include="P_20ModificiarCadenav2.asm" />
     <MASM Include="P_8_ValorMayor.asm" />
     <MASM Include="P_9_ValorMenor.asm" />
   </ItemGroup>
@@ -121,7 +123,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>c:/Irvine</AdditionalLibraryDirectories>
-      <EntryPointSymbol>main518</EntryPointSymbol>
+      <EntryPointSymbol>main521</EntryPointSymbol>
       <ImportLibrary>c:/Irvine</ImportLibrary>
     </Link>
     <MASM>

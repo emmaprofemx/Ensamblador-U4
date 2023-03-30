@@ -18,6 +18,8 @@
     <MASM Include="P_16DUP.asm" />
     <MASM Include="P_17LeerCarecteres.asm" />
     <MASM Include="P_18LeecCaracteresV2.asm" />
+    <MASM Include="P_19ModificarCadena.asm" />
+    <MASM Include="P_20ModificiarCadenav2.asm" />
   </ItemGroup>
   <ItemGroup>
     <Object Include="..\..\..\..\..\..\Irvine\Lib32\Irvine32_Library\Irvine32.obj" />
