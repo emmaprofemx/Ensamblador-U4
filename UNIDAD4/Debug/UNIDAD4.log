@@ -1,4 +1,5 @@
-﻿  Assembling Ej_Par.asm...
+﻿  Assembling Ej_vector_invertido.asm...
+  Assembling Ej_Par.asm...
   Assembling Ej_promedio.asm...
   Assembling P1_IntroVectores.asm...
   Assembling P2_IntroVecotres2.asm...
@@ -17,23 +18,24 @@
   Assembling P_20ModificiarCadenav2.asm...
   Assembling P_8_ValorMayor.asm...
   Assembling P_9_ValorMenor.asm...
-Ej_Par.obj : warning LNK4258: la directiva '/ENTRY:main513@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-Ej_promedio.obj : warning LNK4258: la directiva '/ENTRY:main512@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P1_IntroVectores.obj : warning LNK4258: la directiva '/ENTRY:main200@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P2_IntroVecotres2.obj : warning LNK4258: la directiva '/ENTRY:main202@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P3_IntroVectores3.obj : warning LNK4258: la directiva '/ENTRY:main403@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P3_IntroVectores3v2.obj : warning LNK4258: la directiva '/ENTRY:main404@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P4_MostrandoDatos.obj : warning LNK4258: la directiva '/ENTRY:main405@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-Plantilla.obj : warning LNK4258: la directiva '/ENTRY:main@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-Ej_cuadrado.obj : warning LNK4258: la directiva '/ENTRY:main507@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_07_RecorridoArreglos.obj : warning LNK4258: la directiva '/ENTRY:main409@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_10_CuantosMenoresQueX.obj : warning LNK4258: la directiva '/ENTRY:main511@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_15EntradaVector.obj : warning LNK4258: la directiva '/ENTRY:main515@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_16DUP.obj : warning LNK4258: la directiva '/ENTRY:main516@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_17LeerCarecteres.obj : warning LNK4258: la directiva '/ENTRY:main517@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_18LeecCaracteresV2.obj : warning LNK4258: la directiva '/ENTRY:main518@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_19ModificarCadena.obj : warning LNK4258: la directiva '/ENTRY:main520@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_20ModificiarCadenav2.obj : warning LNK4258: la directiva '/ENTRY:main521@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_8_ValorMayor.obj : warning LNK4258: la directiva '/ENTRY:main506@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-P_9_ValorMenor.obj : warning LNK4258: la directiva '/ENTRY:main510@0' no es compatible con el modificador '/ENTRY:main521'; se ha omitido
-  UNIDAD4.vcxproj -> C:\Users\EMMANUEL\source\repos\UNIDAD4\Debug\UNIDAD4.exe
+Ej_vector_invertido.obj : warning LNK4258: la directiva '/ENTRY:main580@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+Ej_Par.obj : warning LNK4258: la directiva '/ENTRY:main513@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+Ej_promedio.obj : warning LNK4258: la directiva '/ENTRY:main512@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P1_IntroVectores.obj : warning LNK4258: la directiva '/ENTRY:main200@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P2_IntroVecotres2.obj : warning LNK4258: la directiva '/ENTRY:main202@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P3_IntroVectores3.obj : warning LNK4258: la directiva '/ENTRY:main403@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P3_IntroVectores3v2.obj : warning LNK4258: la directiva '/ENTRY:main404@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P4_MostrandoDatos.obj : warning LNK4258: la directiva '/ENTRY:main405@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+Plantilla.obj : warning LNK4258: la directiva '/ENTRY:main@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+Ej_cuadrado.obj : warning LNK4258: la directiva '/ENTRY:main507@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_07_RecorridoArreglos.obj : warning LNK4258: la directiva '/ENTRY:main409@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_10_CuantosMenoresQueX.obj : warning LNK4258: la directiva '/ENTRY:main511@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_15EntradaVector.obj : warning LNK4258: la directiva '/ENTRY:main515@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_16DUP.obj : warning LNK4258: la directiva '/ENTRY:main516@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_17LeerCarecteres.obj : warning LNK4258: la directiva '/ENTRY:main517@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_18LeecCaracteresV2.obj : warning LNK4258: la directiva '/ENTRY:main518@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_19ModificarCadena.obj : warning LNK4258: la directiva '/ENTRY:main520@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_20ModificiarCadenav2.obj : warning LNK4258: la directiva '/ENTRY:main521@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_8_ValorMayor.obj : warning LNK4258: la directiva '/ENTRY:main506@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+P_9_ValorMenor.obj : warning LNK4258: la directiva '/ENTRY:main510@0' no es compatible con el modificador '/ENTRY:main580'; se ha omitido
+  UNIDAD4.vcxproj -> C:\Users\Usuario\Downloads\microooo\ensmablador unidad 4\Ensamblador-U4\Debug\UNIDAD4.exe
