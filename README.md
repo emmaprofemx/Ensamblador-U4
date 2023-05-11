@@ -19,3 +19,4 @@ En esta repositorio se incluiran ejemplos del uso de Arrays en el lenguaje ensam
 * [EJ1-Potencia de todos los numeros](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_cuadrado.asm)
 * [EJ2-Promedio de todos los numeros del vector](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_promedio.asm)
 * [EJ3-Pares en el vector](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_Par.asm)
+* [EJ4-Vector invertido](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_vector_invertido.asm)
