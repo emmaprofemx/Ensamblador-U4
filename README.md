@@ -13,8 +13,8 @@ En esta repositorio se incluiran ejemplos del uso de Arrays en el lenguaje ensam
 * [P10-DUP](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_16DUP.asm)
 * [P11-Leer Caracterees](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_17LeerCarecteres.asm)
 * [P12-Leer Caracteres v2](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_18LeecCaracteresV2.asm)
-* [P13-Modificar cadena] (https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_19ModificarCadena.asm)
-* [P14-Modificar cadena v2] (https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_20ModificiarCadenav2.asm)
+* [P13-Modificar cadena](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_19ModificarCadena.asm)
+* [P14-Modificar cadena v2](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/P_20ModificiarCadenav2.asm)
 ## TAREAS 
 * [EJ1-Potencia de todos los numeros](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_cuadrado.asm)
 * [EJ2-Promedio de todos los numeros del vector](https://github.com/emmaprofemx/Ensamblador-U4/blob/main/UNIDAD4/Ej_promedio.asm)
